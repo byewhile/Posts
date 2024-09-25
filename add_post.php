@@ -54,6 +54,4 @@ $sql = "INSERT INTO `posts` (user_id, value, time) VALUES ('$user_id', '$post_va
 $conn->query($sql);
 $conn->close();
 
-// mail("AlekseyTarkov@ya.ru", $user_login . " опубликовал новый POST", $user_login . " опубликовал новый POST\nСодержимое POST'а: " . $post_value . "\nhttps://vernonafk.ru");
-
 header("Location: profile?id=" . $user_id);
